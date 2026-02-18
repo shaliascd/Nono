@@ -1,0 +1,274 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(90, 62, 43, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #C49A6C;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+       background: #F5EFE6
+
+;
+       color: #2E2E2E;
+
+   }
+
+   h1, h2 {
+       font-family: 'Playfair Display', serif;
+
+}
+
+.hero {
+    background: url('images/hero-photo.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    margin-top: 55px;
+
+
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #C49A6C;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #a87e55;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 90px 40px;
+    background: #F8F5F2;
+    text-align: center;
+}
+
+.feature {
+    max-width: 320px;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+    background: #F3E5D3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    font-size: 28px;
+    color: #C49A6C;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.feature p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio {
+    background: #f4f4f4;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.custom ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.custom li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.custom li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #C49A6C;
+    font-size: 20px;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 5px 0;
+}
+
+.price {
+    color: #C49A6C;
+    font-weight: 600;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0 10px 0;
+    line-height: 1.5;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
