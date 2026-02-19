@@ -279,17 +279,64 @@ footer {
 
 @media (max-width: 768px) {
 
-    .navbar {
-        padding: 25px 20px;
+    .menu-toggle {
+        display: flex;
     }
 
-    .logo {
-        font-size: 22px;
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: rgba(90, 62, 43, 0.98);
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 40px 0;
+
+        /* Animación suave */
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.4s ease;
     }
 
-    .nav-links a {
-        font-size: 20px;
-        padding: 10px 0;
-        display: block;
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
     }
+
+    /* Animación del icono a X */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s ease;
 }
