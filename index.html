@@ -14,7 +14,7 @@
 
 
 <nav class="navbar">
-    <div class="logo">WoodCraft Studio</div>
+    <div class="logo">Nono's Studio</div>
 
     <div class="menu-toggle" id="menu-toggle">
         <span></span>
@@ -23,9 +23,9 @@
     </div>
 
     <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -145,20 +145,21 @@
 </footer>
 
 <script>
-    const toggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
 
-    toggle.addEventListener("click", () => {
-        toggle.classList.toggle("active");
-        navLinks.classList.toggle("active");
-    });
+     const toggle = document.getElementById("menu-toggle");
+     const navLinks = document.getElementById("nav-links");
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            toggle.classList.remove("active");
-            navLinks.classList.remove("active");
-        });
-    });
+     toggle.addEventListener("click", () => {
+         toggle.classList.toggle("active");
+         navLinks.classList.toggle("active");
+     });
+
+     document.querySelectorAll(".nav-links a").forEach(link => {
+         link.addEventListener("click", () => {
+             toggle.classList.remove("active");
+             navLinks.classList.remove("active");
+         });
+     });
 </script>
 
 
