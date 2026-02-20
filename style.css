@@ -27,7 +27,7 @@ body {
 .logo {
     color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .nav-links {
@@ -299,6 +299,28 @@ footer {
     transition: 0.3s ease;
 }
 
+#contact {
+    background: #ffffff;
+    padding: 120px 20px;
+}
+
+#about {
+    padding: 120px 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+#contact {
+    background: #ffffff;
+    padding: 140px 20px;
+    border-top: 1px solid #e8e2d9;
+}
+
+
+
 @media (max-width: 768px) {
 
     .menu-toggle {
@@ -331,8 +353,72 @@ footer {
         pointer-events: auto;
     }
 }
+.contact-page {
+    padding: 140px 40px;
+    background: #ffffff;
+    border-top: 1px solid #e8e2d9;
+}
 
 
+.contact-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.contact-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 450px;
+    text-align: left;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 12px 0 22px 0;
+    border-radius: 10px;
+    border: 1.5px solid #c8b8a6;  /* soft warm beige border */
+    background-color: #fffaf5;    /* very soft warm background */
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-card input:focus,
+.contact-card textarea:focus {
+    outline: none;
+    border-color: #a6784f;  /* your warm brown */
+    box-shadow: 0 0 0 3px rgba(166, 120, 79, 0.15);
+}
+
+
+.about {
+    padding: 120px 20px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.logo {
+    text-decoration: none;
+    color: white; /* or whatever color you're using */
+}
 
 

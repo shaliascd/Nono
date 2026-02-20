@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Nono's Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Nono's Studio</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="contact-page">
+    <h1>Get in Touch</h1>
+    <p>Have a question or interested in a custom piece? We'd love to hear from you.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+            <h2>Send Us a Message</h2>
+
+
+            <form action="https://formspree.io/f/xeellkje" method="POST">
+
+                <label>Name *</label>
+                <input type="text" name="name" required>
+
+                <label>Email *</label>
+                <input type="email" name="email" required>
+
+                <label>Phone</label>
+                <input type="text" name="phone">
+
+                <label>Message *</label>
+                <textarea name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+                <input type="hidden" name="_redirect" value="thankyou.html">
+
+            </form>
+
+
+
+
+        </div>
+
+
+
+        <div class="contact-card">
+            <h2>Contact Information</h2>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                nonohandcrafts@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                (786) 458-6870
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Monday - Friday: 9AM - 6PM <br>
+                Saturday: 10AM - 5PM
+            </p>
+        </div>
+
+
+
+    </div>
+</section>
+
+</body>
+</html>
